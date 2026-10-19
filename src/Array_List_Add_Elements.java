@@ -5,6 +5,7 @@ public class Array_List_Add_Elements {
 
         ArrayList<Integer>List=new ArrayList<Integer>();
         //add element
+
         List.add(0);
         List.add(2);
         List.add(3);
