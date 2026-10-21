@@ -19,7 +19,7 @@ public class Array_List_Add_set_Elements {
 
         //add between elements
 
-        List.add(1,3);
+        List.add(0,1);
         System.out.println(List);
 
         //add set elements
