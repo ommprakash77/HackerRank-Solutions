@@ -4,6 +4,7 @@ public class Array_List_Size {
     public static void main(String[] args) {
         ArrayList<Integer>List=new ArrayList<Integer>();
 
+        //add elements
         List.add(1);
         List.add(2);
         List.add(3);
@@ -14,6 +15,7 @@ public class Array_List_Size {
         System.out.println(List);
 
         //size
+
         int size=List.size();
         System.out.println(size);
     }
