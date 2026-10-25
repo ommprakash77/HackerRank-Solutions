@@ -53,9 +53,14 @@ public class LL {
 }
     public static void main(String[] args) {
         LL list=new LL();
-        list.addFirst("this");
-        list.addFirst("is");
-        list.addlast("boy");
+      list.addFirst("is");
+      list.addFirst("this");
+      list.addlast("a");
+      list.addlast("boy");
+      list.addFirst("who");
+
+      list.addlast("?");
+
 
         list.printList();
 
