@@ -1,4 +1,4 @@
-public class Reverse_LinkedList {
+public class Reverse_iterative_LinkedList {
     Node head;
 
     class Node {
@@ -67,7 +67,7 @@ public class Reverse_LinkedList {
             head = preveNode;
         }
             public static void main(String[]args){
-                Reverse_LinkedList list=new Reverse_LinkedList();
+                Reverse_iterative_LinkedList list=new Reverse_iterative_LinkedList();
                 list.addFirst("1");
                 list.addLast("2");
                 list.addLast("3");

@@ -76,6 +76,36 @@ public class Remove_LinkedList {
         secondlast.next=null;
     }
 
+    public void Reverseiterative() {
+        if (head == null || head.next == null) {
+            return;
+        }
+            Node preveNode=head;
+            Node currNode = head.next;
+
+            while (currNode.next != null) {
+                Node nextNode = currNode.next;
+                currNode.next = preveNode;
+
+                //update
+                preveNode = currNode;
+                currNode = nextNode;
+            }
+            head.next = null;
+            head = preveNode;
+        }
+
+        public Node ReverseRecursive(Node head){
+           if(head==null || head.next==null){
+               return head;
+           }
+           Node newhead=ReverseRecursive(head.next);
+           head.next.next=head;
+           head.next=null;
+           return newhead;
+        }
+
+
     public static void main(String[]args){
         Remove_LinkedList list=new Remove_LinkedList();
         list.addFirst("is");
@@ -84,10 +114,11 @@ public class Remove_LinkedList {
         list.addLast("to");
 
         list.printList();
-        list.RemoveLast();
 
+        list.Reverseiterative();
         list.printList();
 
+        list.head=list.ReverseRecursive(list.head);
         list.printList();
     }
 }
