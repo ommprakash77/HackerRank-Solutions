@@ -28,6 +28,8 @@ public static void reverse(Stack<Integer>S){
         S.push(1);
         S.push(3);
 
+        reverse(S);
+
         while(!S.isEmpty()){
             System.out.println(S.peek());
             S.pop();
