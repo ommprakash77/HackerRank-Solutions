@@ -8,5 +8,8 @@ public class Hashmap_insertion {
         map.put("us",50);
         map.put("china",150);
         System.out.println(map);
+
+        map.put("china",200);
+        System.out.println(map);
     }
 }
