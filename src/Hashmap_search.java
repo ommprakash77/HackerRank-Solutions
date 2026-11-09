@@ -18,6 +18,15 @@ public class Hashmap_search {
         } else {
             System.out.println("key iis not present n the map");
         }
+      for(Map.Entry<String,Integer>e:map.entrySet()){
+            System.out.println(e.getKey());
+            System.out.println(e.getValue());
+            Set<String>key=map.keySet();
+            for(String keys:key){
+
+                System.out.println(key+" "+map);
+            }
+        }
     }
 }
 
