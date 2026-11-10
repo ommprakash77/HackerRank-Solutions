@@ -1,4 +1,4 @@
-package Hashmap;
+package Hashing;
 
 import java.util.*;
 public class MajorityElemenet_Hashmap {
