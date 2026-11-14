@@ -12,6 +12,7 @@ public class Union_Hashset {
         for (int j = 0; j < arr2.length; j++) {
             set.add(arr2[j]);
         }
+
         return set.size();
     }
 
